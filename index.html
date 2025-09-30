@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web View</title>
     <style>
-        /* حذف هرگونه حاشیه و اسکرول از بدنه اصلی صفحه */
-        body {
+        body, html {
             margin: 0;
+            padding: 0;
+            height: 100%;
             overflow: hidden;
         }
-
-        /* تنظیمات آی‌فریم برای نمایش تمام صفحه */
         iframe {
-            border: none; /* حذف کادر دور وب‌ویو */
-            width: 100vw; /* عرض برابر با ۱۰۰ درصد عرض نمایشگر */
-            height: 100vh; /* ارتفاع برابر با ۱۰۰ درصد ارتفاع نمایشگر */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <!-- تگ iframe برای بارگذاری و نمایش وب‌سایت مورد نظر -->
-    <iframe src="https://mrboytlg.ir"></iframe>
+    <!-- آی‌فریم به فایل پروکسی روی سرور شما اشاره می‌کند -->
+    <iframe src="proxy.php"></iframe>
 </body>
 </html>
