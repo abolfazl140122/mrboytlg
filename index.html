@@ -1,1 +1,26 @@
-.
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web View</title>
+    <style>
+        /* حذف هرگونه حاشیه و اسکرول از بدنه اصلی صفحه */
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* تنظیمات آی‌فریم برای نمایش تمام صفحه */
+        iframe {
+            border: none; /* حذف کادر دور وب‌ویو */
+            width: 100vw; /* عرض برابر با ۱۰۰ درصد عرض نمایشگر */
+            height: 100vh; /* ارتفاع برابر با ۱۰۰ درصد ارتفاع نمایشگر */
+        }
+    </style>
+</head>
+<body>
+    <!-- تگ iframe برای بارگذاری و نمایش وب‌سایت مورد نظر -->
+    <iframe src="https://mrboytlg.ir"></iframe>
+</body>
+</html>
